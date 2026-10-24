@@ -8,7 +8,7 @@
     <meta property="og:description" content="Train harder, lift stronger, and build discipline with Lifestyle Gym & Fitness in Ruiri.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://lifestylegym.app.github.dev/#contact">
-    <meta property="og:image" content="images/hero.jpg">
+    <meta property="og:image" content="hero.jpg">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Lifestyle Gym & Fitness - Ruiri">
     <meta name="twitter:description" content="Strength, martial arts, and community fitness for a healthier lifestyle in Ruiri.">
@@ -35,9 +35,7 @@
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
 
-        html {
-            scroll-behavior: smooth;
-        }
+        html { scroll-behavior: smooth; }
 
         body {
             font-family: 'Montserrat', sans-serif;
@@ -101,7 +99,7 @@
         /* Hero Section */
         .hero {
             height: 90vh;
-            background: linear-gradient(rgba(0,0,0,0.72), rgba(0,0,0,0.72)), url('images/hero.jpg');
+            background: linear-gradient(rgba(0,0,0,0.72), rgba(0,0,0,0.72)), url('hero.jpg');
             background-size: cover;
             background-position: center;
             display: flex;
@@ -121,10 +119,7 @@
             background: linear-gradient(180deg, rgba(0,0,0,0.2), rgba(0,0,0,0.7));
         }
 
-        .hero > * {
-            position: relative;
-            z-index: 1;
-        }
+        .hero > * { position: relative; z-index: 1; }
 
         .hero-badge {
             display: inline-block;
@@ -191,9 +186,7 @@
         }
 
         /* Sections General */
-        section {
-            padding: 90px 10%;
-        }
+        section { padding: 90px 10%; }
         h2 {
             font-size: clamp(2rem, 3vw, 3rem);
             text-align: center;
@@ -242,9 +235,7 @@
             color: var(--accent-color);
             font-size: 1.35rem;
         }
-        .service-card p {
-            color: var(--secondary-text);
-        }
+        .service-card p { color: var(--secondary-text); }
 
         .stats-banner {
             margin: 0 auto 60px;
@@ -259,11 +250,7 @@
             box-shadow: var(--shadow);
         }
 
-        .stat-box {
-            text-align: center;
-            padding: 14px 10px;
-        }
-
+        .stat-box { text-align: center; padding: 14px 10px; }
         .stat-box strong {
             display: block;
             font-size: clamp(1.8rem, 2.5vw, 2.5rem);
@@ -271,7 +258,6 @@
             font-weight: 900;
             line-height: 1.1;
         }
-
         .stat-box span {
             color: var(--secondary-text);
             text-transform: uppercase;
@@ -306,11 +292,9 @@
             color: var(--accent-color);
             margin-bottom: 20px;
         }
-        .price-card p {
-            color: var(--secondary-text);
-        }
+        .price-card p { color: var(--secondary-text); }
 
-        /* NEW: Gallery Section */
+        /* Gallery Section */
         .gallery-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -368,15 +352,8 @@
             font-size: 1.5rem;
             font-weight: 900;
         }
-        .choice-item h3 {
-            margin-bottom: 10px;
-            color: var(--text-color);
-            font-size: 1.2rem;
-        }
-        .choice-item p {
-            color: var(--secondary-text);
-            line-height: 1.7;
-        }
+        .choice-item h3 { margin-bottom: 10px; color: var(--text-color); font-size: 1.2rem; }
+        .choice-item p { color: var(--secondary-text); line-height: 1.7; }
 
         .promo-strip {
             max-width: 1200px;
@@ -391,22 +368,10 @@
             gap: 20px;
             box-shadow: var(--shadow);
         }
-        .promo-strip h3 {
-            font-size: clamp(1.6rem, 2vw, 2.3rem);
-            margin-bottom: 6px;
-            letter-spacing: -0.04em;
-        }
-        .promo-strip p {
-            color: var(--secondary-text);
-            margin: 0;
-        }
+        .promo-strip h3 { font-size: clamp(1.6rem, 2vw, 2.3rem); margin-bottom: 6px; letter-spacing: -0.04em; }
+        .promo-strip p { color: var(--secondary-text); margin: 0; }
 
-        .final-cta {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 80px 24px 30px;
-            text-align: center;
-        }
+        .final-cta { max-width: 1200px; margin: 0 auto; padding: 80px 24px 30px; text-align: center; }
         .final-cta-box {
             background: linear-gradient(135deg, rgba(214, 167, 91, 0.14), rgba(11, 15, 19, 0.96));
             border: 1px solid rgba(214, 167, 91, 0.3);
@@ -414,15 +379,8 @@
             padding: 48px 28px;
             box-shadow: var(--shadow);
         }
-        .final-cta-box h2 {
-            margin-bottom: 16px;
-        }
-        .final-cta-box p {
-            color: var(--secondary-text);
-            max-width: 700px;
-            margin: 0 auto 24px;
-            font-size: 1.06rem;
-        }
+        .final-cta-box h2 { margin-bottom: 16px; }
+        .final-cta-box p { color: var(--secondary-text); max-width: 700px; margin: 0 auto 24px; font-size: 1.06rem; }
 
         .testimonial-grid {
             display: grid;
@@ -436,65 +394,31 @@
             padding: 28px 22px;
             box-shadow: var(--shadow);
         }
-        .stars {
-            color: var(--accent-color);
-            letter-spacing: 0.18em;
-            margin-bottom: 14px;
-            font-size: 0.9rem;
-        }
-        .testimonial-card p {
-            color: var(--secondary-text);
-            line-height: 1.8;
-            margin-bottom: 18px;
-        }
-        .client {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            border-top: 1px solid rgba(255,255,255,0.08);
-            padding-top: 14px;
-        }
+        .stars { color: var(--accent-color); letter-spacing: 0.18em; margin-bottom: 14px; font-size: 0.9rem; }
+        .testimonial-card p { color: var(--secondary-text); line-height: 1.8; margin-bottom: 18px; }
+        .client { display: flex; align-items: center; gap: 12px; border-top: 1px solid rgba(255,255,255,0.08); padding-top: 14px; }
         .client-avatar {
-            width: 42px;
-            height: 42px;
-            border-radius: 50%;
+            width: 42px; height: 42px; border-radius: 50%;
             background: linear-gradient(135deg, var(--accent-color), var(--accent-strong));
-            color: #000;
-            display: grid;
-            place-items: center;
-            font-weight: 900;
-            font-size: 0.8rem;
+            color: #000; display: grid; place-items: center; font-weight: 900; font-size: 0.8rem;
         }
-        .client strong {
-            display: block;
-            color: var(--text-color);
-        }
-        .client span {
-            color: var(--muted);
-            font-size: 0.8rem;
-        }
+        .client strong { display: block; color: var(--text-color); }
+        .client span { color: var(--muted); font-size: 0.8rem; }
 
         .contact-box {
             background: linear-gradient(180deg, var(--card-bg), rgba(0,0,0,0.15));
-            padding: 30px 24px;
-            border-radius: 16px;
-            min-width: 220px;
-            border: 1px solid var(--border);
-            box-shadow: var(--shadow);
+            padding: 30px 24px; border-radius: 16px; min-width: 220px;
+            border: 1px solid var(--border); box-shadow: var(--shadow);
         }
         .contact-box h3 { color: var(--accent-color); margin-bottom: 15px; font-size: 1.5rem; }
         .contact-box p { font-size: 1.05rem; color: var(--secondary-text); }
 
         /* Footer */
         footer {
-            text-align: center;
-            padding: 24px 20px;
-            background-color: #000;
-            color: var(--secondary-text);
-            font-size: 0.85rem;
+            text-align: center; padding: 24px 20px; background-color: #000;
+            color: var(--secondary-text); font-size: 0.85rem;
             border-top: 2px solid rgba(244, 197, 66, 0.4);
-            letter-spacing: 0.12em;
-            text-transform: uppercase;
+            letter-spacing: 0.12em; text-transform: uppercase;
         }
 
         /* Mobile Responsiveness */
@@ -511,7 +435,7 @@
     <!-- Navigation -->
     <nav>
         <div class="nav-brand" aria-label="Lifestyle Gym & Fitness">
-            <img src="images/logo.png" alt="Lifestyle Gym Logo" class="nav-logo">
+            <img src="logo.png" alt="Lifestyle Gym Logo" class="nav-logo">
             <span>Lifestyle Gym</span>
         </div>
         <div class="nav-links">
@@ -544,40 +468,16 @@
     <section id="services">
         <h2>Our <span>Classes</span></h2>
         <div class="stats-banner">
-            <div class="stat-box">
-                <strong>5:30AM</strong>
-                <span>Morning Kickoff</span>
-            </div>
-            <div class="stat-box">
-                <strong>6 Days</strong>
-                <span>Mon - Sat</span>
-            </div>
-            <div class="stat-box">
-                <strong>4.9/5</strong>
-                <span>Community Rating</span>
-            </div>
-            <div class="stat-box">
-                <strong>Daily</strong>
-                <span>Results Focus</span>
-            </div>
+            <div class="stat-box"><strong>5:30AM</strong><span>Morning Kickoff</span></div>
+            <div class="stat-box"><strong>6 Days</strong><span>Mon - Sat</span></div>
+            <div class="stat-box"><strong>4.9/5</strong><span>Community Rating</span></div>
+            <div class="stat-box"><strong>Daily</strong><span>Results Focus</span></div>
         </div>
         <div class="services-grid">
-            <div class="service-card">
-                <h3>Hardcore Bodybuilding</h3>
-                <p>State-of-the-art free weights and machines for serious strength gains.</p>
-            </div>
-            <div class="service-card">
-                <h3>Martial Arts & Karate</h3>
-                <p>Dedicated training for discipline, self-defense, and mental focus.</p>
-            </div>
-            <div class="service-card">
-                <h3>Zumba & Aerobics</h3>
-                <p>High-energy group classes to burn calories and boost your mood.</p>
-            </div>
-            <div class="service-card">
-                <h3>Personal Training</h3>
-                <p>One-on-one coaching tailored specifically to your body and goals.</p>
-            </div>
+            <div class="service-card"><h3>Hardcore Bodybuilding</h3><p>State-of-the-art free weights and machines for serious strength gains.</p></div>
+            <div class="service-card"><h3>Martial Arts & Karate</h3><p>Dedicated training for discipline, self-defense, and mental focus.</p></div>
+            <div class="service-card"><h3>Zumba & Aerobics</h3><p>High-energy group classes to burn calories and boost your mood.</p></div>
+            <div class="service-card"><h3>Personal Training</h3><p>One-on-one coaching tailored specifically to your body and goals.</p></div>
         </div>
     </section>
 
@@ -585,59 +485,28 @@
     <section id="why-us">
         <h2>Why <span>Choose Us</span></h2>
         <div class="choice-grid">
-            <div class="choice-item">
-                <div class="choice-icon">01</div>
-                <h3>Elite Equipment</h3>
-                <p>Train with quality machines, free weights, and a motivating environment built for real progress.</p>
-            </div>
-            <div class="choice-item">
-                <div class="choice-icon">02</div>
-                <h3>Results-Driven Coaching</h3>
-                <p>Whether you want strength, fitness, or discipline, our support helps you stay consistent and focused.</p>
-            </div>
-            <div class="choice-item">
-                <div class="choice-icon">03</div>
-                <h3>Community Energy</h3>
-                <p>Join a strong, encouraging gym culture where every member pushes each other toward better health.</p>
-            </div>
-            <div class="choice-item">
-                <div class="choice-icon">04</div>
-                <h3>Flexible Access</h3>
-                <p>Enjoy convenient training hours and affordable membership plans tailored to your routine and goals.</p>
-            </div>
+            <div class="choice-item"><div class="choice-icon">01</div><h3>Elite Equipment</h3><p>Train with quality machines, free weights, and a motivating environment built for real progress.</p></div>
+            <div class="choice-item"><div class="choice-icon">02</div><h3>Results-Driven Coaching</h3><p>Whether you want strength, fitness, or discipline, our support helps you stay consistent and focused.</p></div>
+            <div class="choice-item"><div class="choice-icon">03</div><h3>Community Energy</h3><p>Join a strong, encouraging gym culture where every member pushes each other toward better health.</p></div>
+            <div class="choice-item"><div class="choice-icon">04</div><h3>Flexible Access</h3><p>Enjoy convenient training hours and affordable membership plans tailored to your routine and goals.</p></div>
         </div>
     </section>
 
     <!-- Promo Strip -->
     <section>
         <div class="promo-strip">
-            <div>
-                <h3>Train like you mean it.</h3>
-                <p>Get your first month at a special gym member rate.</p>
-            </div>
+            <div><h3>Train like you mean it.</h3><p>Get your first month at a special gym member rate.</p></div>
             <a href="#contact" class="btn">Claim Your Offer</a>
         </div>
     </section>
 
-    <!-- Pricing Section (UPDATED) -->
+    <!-- Pricing Section -->
     <section id="pricing">
         <h2>Membership <span>Plans</span></h2>
         <div class="pricing-grid">
-            <div class="price-card">
-                <h3>Daily Pass</h3>
-                <div class="price">KES 100</div>
-                <p>Pay as you go. Perfect for flexible schedules.</p>
-            </div>
-            <div class="price-card">
-                <h3>Weekly Pass</h3>
-                <div class="price">KES 400</div>
-                <p>Full access to gym equipment and group classes.</p>
-            </div>
-            <div class="price-card featured">
-                <h3>Monthly VIP</h3>
-                <div class="price">KES 1,000</div>
-                <p>Full access + Personal Training included!</p>
-            </div>
+            <div class="price-card"><h3>Daily Pass</h3><div class="price">KES 100</div><p>Pay as you go. Perfect for flexible schedules.</p></div>
+            <div class="price-card"><h3>Weekly Pass</h3><div class="price">KES 400</div><p>Full access to gym equipment and group classes.</p></div>
+            <div class="price-card featured"><h3>Monthly VIP</h3><div class="price">KES 1,000</div><p>Full access + Personal Training included!</p></div>
         </div>
     </section>
 
@@ -648,61 +517,31 @@
             <div class="testimonial-card">
                 <div class="stars">★★★★★</div>
                 <p>“This gym keeps me focused and disciplined. The atmosphere is serious, motivating, and the coaches push you to reach your goals.”</p>
-                <div class="client">
-                    <div class="client-avatar">KD</div>
-                    <div>
-                        <strong>Koome D.</strong>
-                        <span>Bodybuilder</span>
-                    </div>
-                </div>
+                <div class="client"><div class="client-avatar">KD</div><div><strong>Koome D.</strong><span>Bodybuilder</span></div></div>
             </div>
             <div class="testimonial-card">
                 <div class="stars">★★★★★</div>
                 <p>“The equipment and training space are excellent. Every session feels like a step toward a stronger, healthier life.”</p>
-                <div class="client">
-                    <div class="client-avatar">KE</div>
-                    <div>
-                        <strong>Kirimi Edward</strong>
-                        <span>Fitness Member</span>
-                    </div>
-                </div>
+                <div class="client"><div class="client-avatar">KE</div><div><strong>Kirimi Edward</strong><span>Fitness Member</span></div></div>
             </div>
             <div class="testimonial-card">
                 <div class="stars">★★★★★</div>
                 <p>“I joined for the discipline and stayed for the community. It’s the kind of place that changes your routine for the better.”</p>
-                <div class="client">
-                    <div class="client-avatar">LM</div>
-                    <div>
-                        <strong>Lucy M.</strong>
-                        <span>Member</span>
-                    </div>
-                </div>
+                <div class="client"><div class="client-avatar">LM</div><div><strong>Lucy M.</strong><span>Member</span></div></div>
             </div>
         </div>
     </section>
 
-    <!-- NEW: Gallery Section -->
+    <!-- Gallery Section -->
     <section id="gallery">
         <h2>The <span>Iron Paradise</span></h2>
         <div class="gallery-grid">
-            <div class="gallery-item">
-                <img src="images/hero.jpg" alt="Lifestyle Gym training floor" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="images/punching-bag.jpg" alt="Martial arts and punch bag training" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="images/weights.jpg" alt="Strength training with weights" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="images/gym-floor.jpg" alt="Gym floor and workout area" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="images/1792844722673.jpg" alt="Members training at the gym" loading="lazy">
-            </div>
-            <div class="gallery-item">
-                <img src="images/1792844777092.jpg" alt="Training session and equipment" loading="lazy">
-            </div>
+            <div class="gallery-item"><img src="hero.jpg" alt="Lifestyle Gym training floor" loading="lazy"></div>
+            <div class="gallery-item"><img src="punching-bag.jpg" alt="Martial arts and punch bag training" loading="lazy"></div>
+            <div class="gallery-item"><img src="weights.jpg" alt="Strength training with weights" loading="lazy"></div>
+            <div class="gallery-item"><img src="gym-floor.jpg" alt="Gym floor and workout area" loading="lazy"></div>
+            <div class="gallery-item"><img src="1792844722673.jpg" alt="Members training at the gym" loading="lazy"></div>
+            <div class="gallery-item"><img src="1792844777092.jpg" alt="Training session and equipment" loading="lazy"></div>
         </div>
     </section>
 
@@ -719,18 +558,9 @@
     <section id="contact">
         <h2>Visit <span>Us</span></h2>
         <div class="contact-container">
-            <div class="contact-box">
-                <h3>Location</h3>
-                <p>Ruiri Market<br>Next to Bei Yetu Wholesalers</p>
-            </div>
-            <div class="contact-box">
-                <h3>Opening Hours</h3>
-                <p>Morning: 5:30 AM - 6:30 AM<br>Evening: 4:30 PM - 8:00 PM<br>Monday - Saturday</p>
-            </div>
-            <div class="contact-box">
-                <h3>Call Us</h3>
-                <p><strong>Morris</strong><br>0721 303 980</p>
-            </div>
+            <div class="contact-box"><h3>Location</h3><p>Ruiri Market<br>Next to Bei Yetu Wholesalers</p></div>
+            <div class="contact-box"><h3>Opening Hours</h3><p>Morning: 5:30 AM - 6:30 AM<br>Evening: 4:30 PM - 8:00 PM<br>Monday - Saturday</p></div>
+            <div class="contact-box"><h3>Call Us</h3><p><strong>Mr Morris</strong><br>0721 303 980</p></div>
         </div>
     </section>
 
