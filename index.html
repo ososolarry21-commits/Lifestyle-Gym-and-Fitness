@@ -397,10 +397,24 @@
         .stars { color: var(--accent-color); letter-spacing: 0.18em; margin-bottom: 14px; font-size: 0.9rem; }
         .testimonial-card p { color: var(--secondary-text); line-height: 1.8; margin-bottom: 18px; }
         .client { display: flex; align-items: center; gap: 12px; border-top: 1px solid rgba(255,255,255,0.08); padding-top: 14px; }
-        .client-avatar {
-            width: 42px; height: 42px; border-radius: 50%;
+               .client-avatar {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 2px solid var(--accent-color);
             background: linear-gradient(135deg, var(--accent-color), var(--accent-strong));
-            color: #000; display: grid; place-items: center; font-weight: 900; font-size: 0.8rem;
+            display: grid;
+            place-items: center;
+            font-weight: 900;
+            font-size: 0.85rem;
+            color: #000;
+            flex-shrink: 0;
+        }
+        .client-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
         .client strong { display: block; color: var(--text-color); }
         .client span { color: var(--muted); font-size: 0.8rem; }
@@ -517,17 +531,35 @@
             <div class="testimonial-card">
                 <div class="stars">★★★★★</div>
                 <p>“This gym keeps me focused and disciplined. The atmosphere is serious, motivating, and the coaches push you to reach your goals.”</p>
-                <div class="client"><div class="client-avatar">KD</div><div><strong>Koome D.</strong><span>Bodybuilder</span></div></div>
+                <div class="client">
+                    <div class="client-avatar"><img src="member1.jpg" alt="Koome D."></div>
+                    <div>
+                        <strong>Koome D.</strong>
+                        <span>Bodybuilder</span>
+                    </div>
+                </div>
             </div>
             <div class="testimonial-card">
                 <div class="stars">★★★★★</div>
                 <p>“The equipment and training space are excellent. Every session feels like a step toward a stronger, healthier life.”</p>
-                <div class="client"><div class="client-avatar">KE</div><div><strong>Kirimi Edward</strong><span>Fitness Member</span></div></div>
+                <div class="client">
+                    <div class="client-avatar"><img src="member2.jpg" alt="Kirimi Edward"></div>
+                    <div>
+                        <strong>Kirimi Edward</strong>
+                        <span>Fitness Member</span>
+                    </div>
+                </div>
             </div>
             <div class="testimonial-card">
                 <div class="stars">★★★★★</div>
-                <p>“I joined for the discipline and stayed for the community. It’s the kind of place that changes your routine for the better.”</p>
-                <div class="client"><div class="client-avatar">LM</div><div><strong>Lucy M.</strong><span>Member</span></div></div>
+                <p>“I joined for the discipline and stayed for the community. It's the kind of place that changes your routine for the better.”</p>
+                <div class="client">
+                    <div class="client-avatar">LM</div>
+                    <div>
+                        <strong>Lucy M.</strong>
+                        <span>Member</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
