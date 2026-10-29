@@ -266,6 +266,69 @@
             font-weight: 700;
         }
 
+        /* NEW: Training Programs Section */
+        .programs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .program-card {
+            background: linear-gradient(180deg, var(--card-bg), #111111);
+            padding: 40px 30px;
+            border-radius: 16px;
+            text-align: center;
+            border: 1px solid var(--border);
+            box-shadow: var(--shadow);
+            transition: transform 0.3s ease, border-color 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .program-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--accent-color);
+        }
+        .program-badge {
+            display: inline-block;
+            background: rgba(214, 167, 91, 0.15);
+            color: var(--accent-color);
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+        }
+        .program-card h3 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            color: #ffffff;
+        }
+        .program-card p {
+            color: var(--secondary-text);
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+        .program-focus {
+            border-top: 1px solid var(--border);
+            padding-top: 20px;
+            margin-top: 10px;
+        }
+        .program-focus strong {
+            display: block;
+            color: var(--accent-color);
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+        .program-focus span {
+            color: var(--text-color);
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
         /* Pricing Section */
         .pricing-grid {
             display: grid;
@@ -455,6 +518,7 @@
         <div class="nav-links">
             <a href="#about">About</a>
             <a href="#services">Classes</a>
+            <a href="#programs">Programs</a>
             <a href="#pricing">Membership</a>
             <a href="#gallery">Gallery</a>
             <a href="#contact">Contact</a>
@@ -511,6 +575,50 @@
         <div class="promo-strip">
             <div><h3>Train like you mean it.</h3><p>Get your first month at a special gym member rate.</p></div>
             <a href="#contact" class="btn">Claim Your Offer</a>
+        </div>
+    </section>
+
+    <!-- Training Programs Section -->
+    <section id="programs">
+        <h2>Custom Training <span>Programs</span></h2>
+        <p style="text-align: center; color: var(--secondary-text); max-width: 700px; margin: -30px auto 50px auto; font-size: 1.05rem;">
+            Whether you want to sculpt a fine figure, build hardcore mass, or shred fat, our expert trainers have structured blueprints to get you there.
+        </p>
+        <div class="programs-grid">
+            
+            <!-- Program 1 -->
+            <div class="program-card">
+                <div class="program-badge">For Women & Toning</div>
+                <h3>Sculpt & Glow</h3>
+                <p>Designed to build a lean, sculpted, and confident physique. We focus on shaping the glutes, legs, and core while maintaining elegant posture. No bulk, just pure tone.</p>
+                <div class="program-focus">
+                    <strong>Key Focus Areas</strong>
+                    <span>Glutes, Legs, Core, Posture</span>
+                </div>
+            </div>
+
+            <!-- Program 2 -->
+            <div class="program-card">
+                <div class="program-badge">For Hardcore Growth</div>
+                <h3>Iron & Mass</h3>
+                <p>Maximize muscle hypertrophy, increase raw strength, and build a thick, powerful physique. Relies on compound movements, progressive overload, and heavy lifting.</p>
+                <div class="program-focus">
+                    <strong>Key Focus Areas</strong>
+                    <span>Chest, Back, Legs, Raw Strength</span>
+                </div>
+            </div>
+
+            <!-- Program 3 -->
+            <div class="program-card">
+                <div class="program-badge">For Fat Loss & Definition</div>
+                <h3>Shred & Burn</h3>
+                <p>Strip away body fat, reveal muscle definition, and build elite cardiovascular endurance. Uses high-intensity circuits, short rest periods, and metabolic conditioning.</p>
+                <div class="program-focus">
+                    <strong>Key Focus Areas</strong>
+                    <span>HIIT, Cardio, Endurance, Definition</span>
+                </div>
+            </div>
+
         </div>
     </section>
 
